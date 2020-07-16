@@ -1,0 +1,18 @@
+// Estrutura de Repetição
+// Horário de 06:00 até 12:00 - Bom dia
+// Horário de 12:00 até 18:00 - Boa tarde
+// Caso contrário - Boa noite
+
+// Constante para pegar o horário do pc
+const now = new Date();
+const dataHora = now.getHours();
+
+if ( dataHora > 6 && dataHora < 12){
+    console.log("Bom dia");
+}
+else if (dataHora > 12 && dataHora < 18){
+    console.log("Boa tarde");
+}
+else {
+    console.log("Boa noite");
+}
